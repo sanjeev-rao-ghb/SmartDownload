@@ -103,7 +103,7 @@ export default function ProjectsAdmin() {
             >
 
               <img
-                src={`http://localhost:8082/api/projects/image/${p.projectId}`}
+                src={`https://smartdownload-backend-1.onrender.com/api/projects/image/${p.projectId}`}
 
                 className="project-img"
 
