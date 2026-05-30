@@ -1,0 +1,182 @@
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 40px;
+
+  background:
+    rgba(2, 6, 23, 0.95);
+
+  border-bottom: 1px solid #1e293b;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(10px);
+}
+
+/* ===== LOGO ===== */
+
+.logo a {
+  text-decoration: none;
+
+  color: #60a5fa;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+.logo a:hover {
+  color: #93c5fd;
+}
+
+/* ===== SEARCH ===== */
+
+.search-box {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 25px;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 450px;
+
+  padding: 10px 15px;
+
+  border-radius: 12px;
+  border: 1px solid #334155;
+
+  background: #0f172a;
+  color: white;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 12px rgba(59,130,246,0.4);
+}
+
+/* ===== NAV LINKS ===== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* ===== LOGIN BUTTON ===== */
+
+.login-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  padding: 9px 16px;
+
+  border-radius: 10px;
+
+  color: white !important;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 12px rgba(37,99,235,0.5);
+}
+
+/* ===== LOGOUT BUTTON ===== */
+
+.logout-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #dc2626,
+      #b91c1c
+    );
+
+  color: white;
+
+  border: none;
+
+  padding: 9px 16px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 12px rgba(220,38,38,0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .search-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
