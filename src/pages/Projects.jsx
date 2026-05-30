@@ -27,7 +27,7 @@ import {
 } from "../utils/auth";
 
 import "../styles/Navbar.css";
-import "../styles/projects.css";
+import "../styles/Projects.css";
 
 export default function Projects() {
 
@@ -344,7 +344,7 @@ export default function Projects() {
               {/* IMAGE */}
 
               <img
-                src={`http://localhost:8082/api/projects/image/${p.projectId}`}
+                src={`https://smartdownload-backend-1.onrender.com/api/projects/image/${p.projectId}`}
 
                 className="project-img"
 
