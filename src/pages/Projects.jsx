@@ -27,7 +27,7 @@ import {
 } from "../utils/auth";
 
 import "../styles/Navbar.css";
-import "../styles/Projects.css";
+import "../styles/projects.css";
 
 export default function Projects() {
 
