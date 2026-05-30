@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API = "http://localhost:8082/api/user";
+const API = "https://smartdownload-backend-1.onrender.com/api/user";
 
 export const getProjects = () => {
-  return axios.get(API + "/projects");
+  return axios.get(`${API}/projects`);
 };
